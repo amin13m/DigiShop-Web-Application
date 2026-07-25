@@ -6,7 +6,7 @@ import { getDiscountedPrice } from "../utils/price";
 import DiscountSlider from "../components/home/DiscountSlider";
 import ProductCard from "../components/product/ProductCard";
 import TopSellingProducts from "../components/home/topSellingProducts";
-import BannerSlider from "../components/home/bannerSlider";
+import BannerSlider from "../components/home/BannerSlider";
 
 export default function Home() {
   const navigate = useNavigate();

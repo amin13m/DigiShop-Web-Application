@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { ProductAPI } from "../../api/api";
-import { getDiscountedPrice } from "../../utils/price";
+import { getDiscountedPrice } from "../../utils/price.js";
 import ProductCard from "../product/ProductCard";
 
 function DiscountSlider() {

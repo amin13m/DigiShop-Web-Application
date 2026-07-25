@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Ali Reza",
       "email": "ali@example.com",
-      "password": "1234",
+      "password": "123456",
       "role": "admin",
       "wallet": 95987000
     },
@@ -283,7 +283,15 @@
     },
     {
       "userId": "e17c",
-      "items": [],
+      "items": [
+        {
+          "productId": "14",
+          "quantity": 1,
+          "price": 2200000,
+          "discount": 12,
+          "name": "کیبورد مکانیکی Redragon"
+        }
+      ],
       "id": "5385"
     }
   ],

@@ -2,7 +2,7 @@
 
 # 🛒 DigiShop React Web Application
 
-A modern, full-featured e-commerce web application inspired by DigiKala,
+A modern, feature-rich frontend e-commerce application with a mock REST API backend, inspired by DigiKala.
 built with React and focused on clean architecture, performance optimization,
 scalable state management, and role-based admin management.
 
@@ -20,6 +20,25 @@ activity logging, and optimized user experience.
 | ![Home](assets/screenshots/home.jpg) | ![Home Dark](assets/screenshots/home-dark.jpg) |
 | ![Home Mobile](assets/screenshots/home-m.jpg) | ![Home Mobile Dark](assets/screenshots/home-m-dark.jpg) |
 | ![Home Search](assets/screenshots/home-search.jpg) | ![Home Sliders](assets/screenshots/home-sliders.jpg) |
+
+---
+
+## 🌐 Live Demo
+
+https://digi-shop.aminm13aminm.workers.dev/
+
+---
+
+## 🚀 Deployment
+
+Frontend:
+Cloudflare Pages
+
+Backend:
+Render + JSON Server
+
+Live Demo:
+https://digi-shop.aminm13aminm.workers.dev/
 
 ---
 
@@ -87,6 +106,7 @@ activity logging, and optimized user experience.
 ## ✨ Features
 
 ### 🔐 Authentication (Mock – No JWT)
+- This implementation simulates authentication flow on the client side.
 - Login, Register, Logout
 - Persistent authentication with localStorage
 - Protected routes
@@ -189,18 +209,50 @@ This project includes several optimizations to improve performance and user expe
 
 ## 🗂 Project Structure
 
-src/ ├── api/ ├── components/ │   ├── home/ │   ├── product/ │   ├── layout/ │   ├── profile/ ├── context/ ├── pages/ ├── hooks/ ├── utils/ └── App.jsx
+```
+src
+├── api
+├── components
+│   ├── home
+│   ├── product
+│   ├── layout
+│   └── profile
+├── context
+├── hooks
+├── pages
+└── utils
+```
+
+## 🏗 Architecture
+
+```text
+React Application
+        |
+        |
+Axios API Layer
+        |
+        |
+JSON Server REST API
+        |
+        |
+db.json
+```
 
 ## 🔧 Installation & Run
 
-`bash
+### Frontend
 
+```bash
 npm install
-
-npx json-server --watch db.json --port 3000
-
 npm run dev
+```
 
+### Backend
+
+```bash
+npm install -g json-server
+json-server --watch db.json --port 3000
+```
 
 📌 Future Improvements
 
